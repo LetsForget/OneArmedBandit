@@ -79,10 +79,7 @@ namespace Bets
             {
                 Balance += LastBet.Value * 1.3f;
             }
-            else
-            {
-                Balance -= LastBet.Value;
-            }
+ 
             LastBet = null;
         }
     }
