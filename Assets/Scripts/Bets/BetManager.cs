@@ -77,7 +77,7 @@ namespace Bets
         {
             if (win)
             {
-                Balance += LastBet.Value * 1.3f;
+                Balance += LastBet.Value * 30f;
             }
  
             LastBet = null;
