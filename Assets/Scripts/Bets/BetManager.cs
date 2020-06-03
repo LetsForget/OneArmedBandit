@@ -65,6 +65,11 @@ namespace Bets
 
         private void LetItRoll()
         {
+            if (Balance - Bet < 0 || Bet == 0)
+            {
+                return;
+            }
+
             if (LastBet == null)
             {
                 LastBet = Bet;
@@ -77,7 +82,7 @@ namespace Bets
         {
             if (win)
             {
-                Balance += LastBet.Value * 1.3f;
+                Balance += LastBet.Value * 30f;
             }
  
             LastBet = null;
